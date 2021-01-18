@@ -6,7 +6,7 @@
     "build": "next build && next export",
     "serve": "next start",
     "predeploy": "yarn build && touch out/.nojekyll",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -t -d out"
   },
   "keywords": [],
   "author": "",

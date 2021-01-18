@@ -4,7 +4,7 @@ import React from "react";
 
 function Icon({ icon, name, highlightPattern = null }) {
   const copyToClipboard = () => {
-    const importStr = `import { ${name} } from "react-icons/${name.substring(0, 2).toLowerCase()}"`;
+    const importStr = `import { ${name} } from 'react-icons/${name.substring(0, 2).toLowerCase()}'`;
     copy(importStr);
     toast.success(`Copied '${importStr}' to clipboard`, {
       position: "bottom-center"
